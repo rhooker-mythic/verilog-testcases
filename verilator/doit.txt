@@ -1,0 +1,52 @@
+make: Entering directory `/home/rhooker/verilator/obj_dir'
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o counter_tb.o ../counter_tb.cpp
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+/usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vcounter.cpp > Vcounter__ALLcls.cpp
+/usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vcounter__Trace.cpp Vcounter__Syms.cpp Vcounter__Trace__Slow.cpp > Vcounter__ALLsup.cpp
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o Vcounter__ALLsup.o Vcounter__ALLsup.cpp
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o Vcounter__ALLcls.o Vcounter__ALLcls.cpp
+      Archiving Vcounter__ALL.a ...
+ar r Vcounter__ALL.a Vcounter__ALLcls.o Vcounter__ALLsup.o
+ranlib Vcounter__ALL.a
+g++    counter_tb.o verilated.o verilated_vcd_c.o Vcounter__ALL.a    -o Vcounter -lm -lstdc++ 
+make: Leaving directory `/home/rhooker/verilator/obj_dir'
+@         0 ----- xxx -----
+    sel  1 --> data    1
+@         1 ----- xxx -----
+    sel  2 --> data    2
+@         2 ----- xxx -----
+    sel  3 --> data    3
+@         3 ----- xxx -----
+    sel  0 --> data    0
+@         4 ----- xxx -----
+    sel  1 --> data    1
+@         5 ----- xxx -----
+    sel  2 --> data    2
+@         6 ----- xxx -----
+    sel  3 --> data    3
+@         7 ----- xxx -----
+    sel  0 --> data    0
+@         8 ----- xxx -----
+    sel  1 --> data    1
+@         9 ----- xxx -----
+    sel  2 --> data    2
+@        10 ----- xxx -----
+    sel  3 --> data    3
+@        11 ----- xxx -----
+    sel  0 --> data    0
+@        12 ----- xxx -----
+    sel  1 --> data    1
+@        13 ----- xxx -----
+    sel  2 --> data    2
+@        14 ----- xxx -----
+    sel  3 --> data    3
+@        15 ----- xxx -----
+    sel  0 --> data    0
+@        16 ----- xxx -----
+    sel  1 --> data    1
+@        17 ----- xxx -----
+    sel  2 --> data    2
+@        18 ----- xxx -----
+    sel  3 --> data    3
+@        19 ----- xxx -----
